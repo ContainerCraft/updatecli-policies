@@ -1,0 +1,12 @@
+upstream:
+  kind: github
+  owner: cert-manager
+  repository: cert-manager
+  next_version: 1.0.1
+
+scm:
+  kind: github
+  owner: experimentale
+  repository: pulumi-crd-certmanager
+  username: ringods
+  branch: main

@@ -24,7 +24,11 @@ sources:
       repository: {{ .upstream.repository }}
       versionfilter:
         kind: semver
+#{{ if .upstream.next_version }}
+        pattern: {{ .upstream.next_version }}
+#{{ else }}
         pattern: {{ requiredEnv .upstream.env_version }}
+#{{ end }}
     transformers:
       - trimprefix: "v"
 

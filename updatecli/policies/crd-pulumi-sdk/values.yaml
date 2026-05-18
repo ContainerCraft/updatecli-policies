@@ -33,6 +33,8 @@ upstream:
   # owner: cert-manager
   ## Repository which contains the upstream CRD YAML descriptor files.
   # repository: cert-manager
+  ## next_version is the value to use to filter on releases
+  #next_version: 1.0.0
   ## env_version defines the environment variable to use to filter on releases
   env_version: NEXT_VERSION
 

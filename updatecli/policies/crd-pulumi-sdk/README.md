@@ -59,6 +59,7 @@ The default `values.yaml` exposes these top-level inputs:
     - `kind`: source of releases (`githubrelease`)
     - `owner`: repository owner or organization
     - `repository`: repository name
+    - `next_version`: next version to release (mutually exclusive with `env_version`)
     - `env_version`: environment variable containing the value for the next released version (`NEXT_VERSION`)
 
 ### Example Values
