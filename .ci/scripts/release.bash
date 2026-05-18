@@ -7,7 +7,7 @@ pushd updatecli
 
 : "${POLICIES_ROOT_DIR:=policies}"
 : "${POLICY_ERROR:=false}"
-: "${OCI_REPOSITORY:=ghcr.io/ContainerCraft/updatecli-policies}"
+: "${OCI_REPOSITORY:=ghcr.io/containercraft/updatecli-policies}"
 
 : "${GITHUB_REGISTRY:=}"
 
