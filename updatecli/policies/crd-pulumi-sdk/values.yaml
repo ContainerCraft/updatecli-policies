@@ -47,7 +47,6 @@ scm:
   kind: github
   # owner: updatecli
   # repository: updatecli
-  # token: "xxx"
   # username: "updatecli-bot"
   # branch: main
   commitmessage:
