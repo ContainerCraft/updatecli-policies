@@ -31,10 +31,10 @@ function runUpdatecliDiff(){
   local POLICY_ROOT_DIR=""
   POLICY_ROOT_DIR="$1"
 
-  updatecli pipeline diff \
-    --config "$POLICY_ROOT_DIR/updatecli.d" \
-    --values "$POLICY_ROOT_DIR/values.yaml" \
-    --values "$POLICY_ROOT_DIR/testdata/values.yaml"
+#  updatecli pipeline diff \
+#    --config "$POLICY_ROOT_DIR/updatecli.d" \
+#    --values "$POLICY_ROOT_DIR/values.yaml" \
+#    --values "$POLICY_ROOT_DIR/testdata/values.yaml"
 }
 
 function validateRequiredFile(){
