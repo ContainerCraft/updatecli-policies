@@ -1,0 +1,59 @@
+---
+# Values.yaml contains settings that be used from Updatecli manifest.
+
+## title override the default title of the policy
+# title: "chore: sync file from source repository"
+
+## files contains the list of files to be copied from
+## the source repository to the target repository.
+# files:
+#  - src: ""
+#    dst: ""
+
+## pipelineid is the pipeline id to be used by the policy
+## It is used to identify the pipeline that is running the policy.
+## Different pipelines sharing the same pipelineid and
+## the same scm configuration will update the same pullrequest
+# pipelineid: "file"
+
+## pr contains the pull request settings that can be overridden
+pr:
+  automerge: false
+  # description: ""
+  labels:
+    - dependencies
+# title: ""
+
+## upstream contains the upstream projec's repository information
+## It is used to fetch the released version of the project
+upstream:
+  # Accepted values: githubrelease
+  kind: githubrelease
+  ## Owner of the upstream project (user or organization)
+  # owner: cert-manager
+  ## Repository which contains the upstream CRD YAML descriptor files.
+  # repository: cert-manager
+  ## env_version defines the environment variable to use to filter on releases
+  env_version: NEXT_VERSION
+
+## scm contains the source control management information
+scm:
+  limit: 1
+  commitusingapi: true
+  user: updatecli
+  # email: updatecli-bot@updatecli.io
+  # kind defines the SCM kind to use for this policy
+  # Accepted values: github
+  kind: github
+  # owner: updatecli
+  # repository: updatecli
+  # token: "xxx"
+  # username: "updatecli-bot"
+  # branch: main
+  commitmessage:
+    type: "chore"
+#    title: "sync file from source repository"
+#    body:  "Commit body"
+#    footers: "Signed-off-by: Updatecli bot <>"
+#    scope: "docs"
+#    hidecredit: true

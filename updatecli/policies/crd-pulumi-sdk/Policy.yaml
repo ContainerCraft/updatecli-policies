@@ -1,0 +1,29 @@
+---
+# Policy.yaml contains metadata for the Updatecli policy.
+
+# Authors is the policy authors
+authors:
+  - Ringo De Smet <ringo@de-smet.name>
+
+# URL is the policy url
+url: "https://github.com/ContainerCraft/updatecli-policies/"
+
+# Documentation is the policy documentation URL
+documentation: "https://github.com/ContainerCraft/updatecli-policies/tree/main/updatecli/policies/crd-pulumi-sdk/README.md"
+
+# Source is the policy source URL
+source: "https://github.com/ContainerCraft/updatecli-policies/tree/main/updatecli/policies/crd-pulumi-sdk/"
+
+# Version is the policy version.
+version: 0.1.0
+
+# Vendor is the policy vendor
+vendor: ContainerCraft
+
+# License is the policy licenses
+licenses:
+  - "Apache-2.0 license"
+
+# Description is the short policy description
+description: |
+  Uses a new version of an upstream Kubernetes CRD and updates the required files to generate a new version of the Pulumi SDK for the CRD.
