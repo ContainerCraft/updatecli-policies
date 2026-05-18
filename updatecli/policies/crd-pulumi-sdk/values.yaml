@@ -24,7 +24,7 @@ pr:
     - dependencies
 # title: ""
 
-## upstream contains the upstream projec's repository information
+## upstream contains the upstream project's repository information
 ## It is used to fetch the released version of the project
 upstream:
   # Accepted values: githubrelease

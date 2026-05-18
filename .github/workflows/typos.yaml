@@ -1,0 +1,21 @@
+name: Spell check with typos
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["**"]
+permissions: {}
+jobs:
+  typos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Run typos
+        uses: crate-ci/typos@5374cbf686e897b15713110e233094e2874de7ef # v1.46.1
+        with:
+          config: .config/typos.toml
